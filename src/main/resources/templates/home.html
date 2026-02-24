@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-container {
+            text-align: center;
+            color: white;
+            max-width: 600px;
+        }
+        .hero-container h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        .btn-group-custom {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-custom {
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            border: 2px solid white;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-custom-primary {
+            background-color: white;
+            color: #667eea;
+        }
+        .btn-custom-primary:hover {
+            background-color: transparent;
+            color: white;
+        }
+        .btn-custom-secondary {
+            background-color: transparent;
+            color: white;
+        }
+        .btn-custom-secondary:hover {
+            background-color: white;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <h1>Welcome to Demo App</h1>
+        <p>A modern and secure authentication system built with Spring Boot and Spring Security</p>
+        <div class="btn-group-custom">
+            <a href="/login" class="btn btn-custom btn-custom-primary">Sign In</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
